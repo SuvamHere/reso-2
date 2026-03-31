@@ -1,0 +1,29 @@
+[project]
+name = "resolution-week2-suvamhere"
+version = "0.1.1"
+description = "Quiz and Dictionary CLI wordsmith which takes quiz and give definitions of words"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Suvam Pathak", email = "itsmesuvam9@gmail.com" }
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/suvamhere/reso_2"
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+todo = "resolution_week2_suvamhere.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/resolution_week2_suvamhere"]
+
